@@ -53,8 +53,6 @@ def main():
         results.append((login, assessors[login].get_average_time(), assessors[login].total_mtasks))
 
     results.sort(key=(lambda x: x[1]))
-    #for line in results:
-    #    print(line[0] + ' ' + str(line[1]))
 
     # необходимо отсечь самых "ленивых", а так же сделать поправку на небольшие задержки
     # поэтому возьмем первые 50% результатов
